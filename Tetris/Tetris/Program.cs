@@ -11,11 +11,17 @@ namespace Tetris
             Console.SetWindowSize(widthConsole, heightConsole);
             Console.SetBufferSize(widthConsole, heightConsole);
 
-            Point p1 = new Point();
-            p1.x = 2;
-            p1.y = 3;
-            p1.c = '*';
+            Point p1 = new Point(2, 3,'*');
             p1.Draw();
+
+            Point p2 = new Point()
+            {
+                x = 4,
+                y = 6,
+                c = '+'
+            };
+            p2.Draw();
+
 
             Console.ReadLine();
         }
